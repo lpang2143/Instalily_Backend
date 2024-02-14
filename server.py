@@ -3,7 +3,10 @@ from flask_cors import CORS
 from agent import Agent
 import os
 
+global app
+
 def init_app():
+    global app
     app = Flask(__name__)
     CORS(app)
     # key_file = open('key.txt', mode='r')
