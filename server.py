@@ -43,4 +43,4 @@ if __name__ == '__main__':
     os.environ['PINECONE_KEY'] = pinecone_key
     app = init_app()
     # print(f"KEY: {key}")
-    app.run(debug=True)
+    app.run(port=os.environ.get('PORT', 5000), debug=True)
