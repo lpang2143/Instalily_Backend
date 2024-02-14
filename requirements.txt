@@ -1,0 +1,10 @@
+Flask==3.0.2
+Flask-Cors==4.0.0
+pinecone-client==3.0.2
+langchain==0.1.7
+langchain-community==0.0.20
+langchain-core==0.1.23
+langchain-openai==0.0.6
+langchainhub==0.1.14
+langsmit==0.0.87
+Python==3.9.6
