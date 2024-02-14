@@ -39,7 +39,7 @@ def query():
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
-app.run(port=os.environ.get('PORT', 5000), debug=True)
+# app.run(port=os.environ.get('PORT', 5000), debug=True)
 
     
     
