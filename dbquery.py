@@ -71,7 +71,7 @@ def manufacturer_query(manufacturer:str, query: str):
     if manufacturer:
         print(f"{manufacturer}.txt")
         # Accidentally upserted manufacturers with .txt because they were at the end of the filename haha
-        query_params['manufacturer'] = {'$eq': f"{manufacturer}.txt"}
+        query_params['manufacturer'] = {'$eq': manufacturer}
 
     embedding_model = OpenAIEmbeddings(model="text-embedding-ada-002")
     vector = embedding_model.embed_query(query)
